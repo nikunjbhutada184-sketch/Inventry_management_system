@@ -1,0 +1,17 @@
+// Base exception classes for the data layer.
+
+class DatabaseException implements Exception {
+  final String message;
+  const DatabaseException(this.message);
+
+  @override
+  String toString() => 'DatabaseException: $message';
+}
+
+class CacheException implements Exception {
+  final String message;
+  const CacheException(this.message);
+
+  @override
+  String toString() => 'CacheException: $message';
+}
